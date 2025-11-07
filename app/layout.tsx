@@ -5,7 +5,7 @@ import "styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CrowAI - AI Prospecting for Commercial Real Estate Brokers",
+  title: "CrowAI - AI Underwriting for Commercial Real Estate Investors",
   description:
     "Turn any listing into a pipeline of verified tenants. Our agents find properties with leases expiring soon, identify current tenants, verify their intent, and deliver ready-to-contact leads.",
 };
