@@ -51,35 +51,15 @@ export default function NewHero() {
                 </Button>
               </Link>
 
-              <Link href={config.ctaLinks.joinWaitlist}>
+              <Link href="https://app.usecrow.org">
                 <Button
                   size="lg"
                   variant="outline"
                   className="rounded-full px-8 py-6 text-base font-semibold border-gray-300 text-gray-900 hover:bg-gray-50 transition-all"
                 >
-                  Join the Waitlist
+                  Sign In
                 </Button>
               </Link>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
-              <div>
-                <div className="text-3xl font-bold text-gray-900">100+</div>
-                <div className="text-sm text-gray-600 mt-1">
-                  Hours Saved/Month
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-gray-900">4×</div>
-                <div className="text-sm text-gray-600 mt-1">
-                  More Deals Reviewed
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-gray-900">12K+</div>
-                <div className="text-sm text-gray-600 mt-1">Data Sources</div>
-              </div>
             </div>
           </div>
 

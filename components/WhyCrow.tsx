@@ -3,7 +3,7 @@
 import { CheckCircle2 } from "lucide-react";
 
 const reasons = [
-  "Underwrite 10× faster without sacrificing accuracy.",
+  "Underwrite faster without sacrificing accuracy.",
   "Never miss an updated deal — Crow keeps watch.",
   "Stay market-aligned with real-time comps and validated assumptions.",
   "Replace repetition with insight — focus on decisions, not data entry.",

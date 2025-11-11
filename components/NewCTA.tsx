@@ -38,13 +38,13 @@ export default function NewCTA() {
                 </Button>
               </Link>
 
-              <Link href={config.ctaLinks.joinWaitlist}>
+              <Link href="https://app.usecrow.org">
                 <Button
                   size="lg"
                   variant="outline"
                   className="rounded-full px-8 py-6 text-base font-semibold border-2 border-white hover:bg-white hover:text-[#1E3A8A] transition-all"
                 >
-                  Join the Waitlist
+                  Sign In
                 </Button>
               </Link>
             </div>

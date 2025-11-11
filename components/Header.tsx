@@ -40,10 +40,18 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <div className="hidden md:block">
+            <div className="hidden md:flex gap-3">
               <Link href={"https://calendly.com/aryanv0213/30min"}>
                 <Button className="rounded-full px-6 py-2 text-sm font-medium bg-[#1E3A8A] hover:bg-[#1E40AF] text-white transition-colors">
                   Book a Demo
+                </Button>
+              </Link>
+              <Link href="https://app.usecrow.org">
+                <Button
+                  variant="outline"
+                  className="rounded-full px-6 py-2 text-sm font-medium border-gray-300 text-gray-900 hover:bg-gray-50 transition-colors"
+                >
+                  Sign In
                 </Button>
               </Link>
             </div>
@@ -70,10 +78,18 @@ export default function Header() {
                       {item.name}
                     </Link>
                   ))}
-                  <div className="mt-4">
+                  <div className="mt-4 space-y-3">
                     <Link href={"https://calendly.com/aryanv0213/30min"}>
                       <Button className="w-full rounded-full px-6 py-2 text-sm font-medium bg-[#1E3A8A] hover:bg-[#1E40AF] text-white">
                         Book a Demo
+                      </Button>
+                    </Link>
+                    <Link href="https://app.usecrow.org">
+                      <Button
+                        variant="outline"
+                        className="w-full rounded-full px-6 py-2 text-sm font-medium border-gray-300 text-gray-900 hover:bg-gray-50"
+                      >
+                        Sign In
                       </Button>
                     </Link>
                   </div>

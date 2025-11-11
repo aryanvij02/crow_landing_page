@@ -25,7 +25,7 @@ const features = [
     icon: ShieldCheck,
     title: "AI-Verified Financials",
     description:
-      "Cross-checks 100+ internal ratios and dependencies for consistency.",
+      "Cross-checks internal ratios and dependencies for consistency.",
   },
   {
     icon: LineChart,

@@ -5,7 +5,6 @@ import Solution from "../components/Solution";
 import HowItWorks from "../components/HowItWorks";
 import Features from "../components/Features";
 import WhyCrow from "../components/WhyCrow";
-import Impact from "../components/Impact";
 import NewCTA from "../components/NewCTA";
 import NewFooter from "../components/NewFooter";
 
@@ -19,8 +18,6 @@ export default function Home() {
         <Solution />
         {/* <HowItWorks /> */}
         {/* <WhyCrow /> */}
-        <Impact />
-
         <Features />
         <NewCTA />
       </main>

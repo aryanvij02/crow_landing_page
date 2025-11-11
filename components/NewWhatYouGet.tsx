@@ -175,7 +175,7 @@ export default function NewWhatYouGet() {
                       Last Contact
                     </div>
                     <div className="text-sm text-gray-600">
-                      Email opened 2x, responded to inquiry
+                      Email opened, responded to inquiry
                     </div>
                   </div>
                 </div>
@@ -187,4 +187,3 @@ export default function NewWhatYouGet() {
     </section>
   );
 }
-
