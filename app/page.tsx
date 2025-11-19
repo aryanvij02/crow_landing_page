@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import NewHero from "../components/NewHero";
+import DemoVideo from "../components/DemoVideo";
 import Problem from "../components/Problem";
 import Solution from "../components/Solution";
 import HowItWorks from "../components/HowItWorks";
@@ -14,6 +15,7 @@ export default function Home() {
       <Header />
       <main className="flex-1 w-full">
         <NewHero />
+        <DemoVideo />
         <Problem />
         <Solution />
         {/* <HowItWorks /> */}
