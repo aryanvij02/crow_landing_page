@@ -1,17 +1,23 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { config } from "../app/config";
+import { useState } from "react";
 
 const navigation = [
   { name: "How It Works", href: "#how-it-works" },
-  { name: "Features", href: "#features" },
-  // { name: "Why Crow", href: "#why-crow" },
-  { name: "Impact", href: "#impact" },
+];
+
+const solutions = [
+  { name: "Deal Scout", href: "/deal-scout" },
 ];
 
 export default function Header() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
     <div className="w-full fixed top-0 z-50 flex justify-center px-4 py-4">
       <header className="rounded-full px-6 py-2 bg-white/90 backdrop-blur-lg border border-gray-200 shadow-sm max-w-5xl mx-auto">
@@ -37,6 +43,33 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsDropdownOpen(true)}
+              onMouseLeave={() => setIsDropdownOpen(false)}
+            >
+              <button className="flex items-center gap-1 text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors py-2">
+                Solutions
+                <ChevronDown className={`h-4 w-4 transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              
+              {isDropdownOpen && (
+                <div className="absolute top-full left-0 pt-2">
+                  <div className="w-48 rounded-lg bg-white shadow-lg border border-gray-200 py-2">
+                    {solutions.map((solution) => (
+                      <Link
+                        key={solution.name}
+                        href={solution.href}
+                        className="block px-4 py-2 text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-colors"
+                      >
+                        {solution.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           </nav>
 
           <div className="flex items-center gap-4">
@@ -78,6 +111,20 @@ export default function Header() {
                       {item.name}
                     </Link>
                   ))}
+                  
+                  <div className="flex flex-col gap-2">
+                    <span className="text-sm font-medium text-gray-600">Solutions</span>
+                    {solutions.map((solution) => (
+                      <Link
+                        key={solution.name}
+                        href={solution.href}
+                        className="text-sm font-medium text-gray-500 hover:text-gray-900 pl-4"
+                      >
+                        {solution.name}
+                      </Link>
+                    ))}
+                  </div>
+                  
                   <div className="mt-4 space-y-3">
                     <Link href={"https://calendly.com/aryanv0213/30min"}>
                       <Button className="w-full rounded-full px-6 py-2 text-sm font-medium bg-[#1E3A8A] hover:bg-[#1E40AF] text-white">
